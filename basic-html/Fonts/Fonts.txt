@@ -1,0 +1,18 @@
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Permanent+Marker&family=Rock+Salt&family=Sedgwick+Ave+Display&family=Urbanist:ital,wght@0,100;0,400;0,600;0,900;1,100;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,700;1,100;1,700&display=swap" rel="stylesheet">
+
+
+OR
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Permanent+Marker&family=Rock+Salt&family=Sedgwick+Ave+Display&family=Urbanist:ital,wght@0,100;0,400;0,600;0,700;0,900;1,100;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,700;1,100;1,700&display=swap');
+
+CSS rules to specify families
+font-family: 'Dongle', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Urbanist', sans-serif;
+font-family: 'Work Sans', sans-serif;

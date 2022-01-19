@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cabin&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Permanent+Marker&family=Rock+Salt&family=Sedgwick+Ave+Display&family=Urbanist:ital,wght@0,100;0,400;0,600;0,700;0,900;1,100;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,700;1,100;1,700&display=swap');
+
 html {
-    font-family: 'Cabin', Sans-Serif;
-    font-size: 16px;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.5;
+    font-size: 17px;
     color: rgb(31, 31, 31);
 }
 
@@ -10,6 +16,10 @@ html {
 
 *, *:before, *:after {
     box-sizing: border-box;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 
@@ -30,13 +40,15 @@ header {
   }
 
 header div {
-    width: 30%
+    width: 30%;
+    overflow: hidden;
+    
 }
 header img {
     border-radius: 50%;
     height: 60px;
     margin: 1rem 1rem;
-
+    display: block;
 }
 
 nav {
@@ -90,21 +102,30 @@ header img {
 h1, 
 h2, 
 h3{
-    font-family: 'Karla', sans-serif;
+    /*font-family: 'Karla', sans-serif;*/
+    font-family: 'Urbanist', sans-serif;
+    font-weight: regular;
 
 }
 
 .site_title {
     color: rgb(36, 34, 34);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     width: 100%;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    
 }
 main {
     top: 40rem;
     width: 100%;
     margin: 7rem auto;
     background-color: rgb(252, 252, 252);
+}
+
+.fav_things {
+    
 }
 
 .favourites {
@@ -119,41 +140,85 @@ section {
 }
 
 .fav_food {
-    top: 10rem;
+   width: 50%;
+   margin-right: 1rem;
 }
 
-
-
-.why_code_nation {
+/* Why Code Nation */
+section.why_code_nation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    min-height: 4rem;
     margin: 0 auto;
 }
 
-.why_code_nation div {
+
+#code_nation {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+.why_code_nation div.why_cn {
     background-color: black;
-    width: 100%;
-    color: white;
+    width: 50%;
+    padding: 3rem;
+    margin-right: 1rem;
+    min-height: 100%;
+    /* clip-path: ellipse(66% 100% at 63.44% 0%); */
 }
 
 
-
 .why_code_nation h2 {
-    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: regular;
+    font-size: 2.5rem;
+    color: rgb(242, 242, 242);
+    
+}
+
+.why_code_nation article {
+    width: 70%;
+}
+
+
+/* Footer */ 
+footer {
+    background-color:rgb(31, 31, 31);
+    height: 6rem;
+    display: block;
+    box-sizing: border-box;
+    clip-path: ellipse(93% 100% at 31.08% 100%);
 }
 
 .footer_details  {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 50%;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+.footer_details div{
+    height: 3rem;
+    color: whitesmoke;
+    margin-top: 2rem;
+}
+
+
+.footer_details div a:visited {
+    color: white;
+    
 }
 
 
 .copyright {
     text-align: right;
     margin-right: 1rem;
+    background-color:rgb(31, 31, 31);
+    color: white;
+    font-size: 0.75rem;
 }
