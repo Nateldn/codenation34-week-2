@@ -5,12 +5,9 @@
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+    border: black solid 5px;
+    flex-wrap: wrap;    
 }
-
 
 
 .box {
@@ -19,18 +16,21 @@
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding: 15px;
+    justify-content: center;
+   
+    
 }
-
-
   
 /* Colours for each box */
-.box1 { background:#eccc68;}
-.box2 { background:#ff6348;}
-.box3 { background:#ff7f50;}
-.box4 { background:#ff4757;}
-.box5 { background:#f1c40f;}
-.box6 { background:#e67e22;}
-.box7 { background:#2ed573;}
-.box8 { background:#1e90ff;}
-.box9 { background:#c56cf0;}
-.box10 { background:#18dcff;}
+.box1 { background:#eccc68; width: 100%;height: 45vh;}
+.box2 { background:#ff6348; width: 50%; height: 35vh;}
+.box3 { background:#ff7f50; width: 50%; height: 35vh;}
+.box4 { background:#ff4757; height: 45vh; width: 66%; margin-right: 16.5%; margin-left: 16.5%}
+.box5 { background:#f1c40f;  width: 33.33%; height: 35vh;}
+.box6 { background:#e67e22; width: 33.33%; height: 35vh;}
+.box7 { background:#2ed573; width: 33.33%; height: 35vh;}
+.box8 { background:#1e90ff; width: 50%;}
+.box9 { background:#c56cf0;width: 50%;}
+.box10 { background:#18dcff; width: 100%; height: 35vh;}
+
+

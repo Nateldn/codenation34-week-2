@@ -80,6 +80,12 @@ li.social {
 }
 
 @media all and (max-width: 500px) {
+.wrapper {
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 0;
+}
+
   .flex-nav ul  {
     display: flex;
     width: 70vw;
