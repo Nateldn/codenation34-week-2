@@ -1,0 +1,266 @@
+*, *::before, *::after {
+ box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 1px;
+    text-transform: Uppercase;
+}
+
+button:after {
+    content: "\f054";
+}
+
+
+header {
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100vw;
+    color: white;
+    padding: 1.0625rem 1.8rem;
+    height: 5rem;
+    
+}
+header a {
+    text-decoration: none;
+}
+header a:visited {
+    color: white;
+}
+
+
+/* Header Row One */
+
+.hdr_row_one {
+    width: 100%;
+    font-size: .90rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  Triumph Logo */
+.hdr_row_one figure.colone_tm_logo {
+ width: 20%;
+}
+
+/*  Top Navigation */
+
+.coltwo_lks_shp_add_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.top_nav {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.top_nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.top_nav ul li {
+    margin-right: 1rem;
+}
+
+.nav_shop figure {
+    width: 20%;
+    margin-right: 1rem;
+}
+
+
+.pin_icon {
+    height: 1.4rem;
+    width: auto;
+    margin-right: .5rem;
+    }
+
+/* Main Navigation */
+.hdr_row_two {
+
+}
+.main_nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+    margin-top: 0.6rem;
+}
+
+.main_nav ul li {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+
+
+/* --- Hero --  */
+section.hero_cta {
+    width: 100%;
+}
+.hero_cta {
+    background-color: #2a2a2a;
+    
+}
+
+
+.hero_cta ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 40px;
+    line-height: 15px;
+    font-weight: 200;
+    height: 81px;
+    margin-top: 0;
+}
+
+.hero_cta ul li {
+    width: 33.33%;
+    text-align: center;
+    
+}
+
+.hero_cta ul li a {
+    padding: 0 0.625rem;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero_cta ul li a:hover {
+    color: rgb(255, 255, 255);
+    transition: all ease-in 200ms 20ms;
+}
+
+.hero_cta ul li a img {
+    margin-right: 0.7rem;
+}
+
+.cta_icon {
+    height: 2.3rem;
+}
+
+.cta_icon img {}
+
+.hero_cta a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+    position: relative;
+    top: 1rem;
+}
+
+
+.hero figure {
+    width: 100vw;
+    height: 596px;
+    overflow: hidden;
+
+}
+
+.hero figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --------  ------- */
+/* .featured_motos {
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  
+} */
+
+.featured_motos h3 {
+    text-transform: uppercase; 
+    font-size: 1.2rem;
+   
+}
+
+
+/*========= Featured News =======*/
+.featured_news {
+    display: flex;
+    justify-content: center;
+}
+
+
+.featured_news div {
+    width: 25%;
+}
+
+.featured_news figure {
+    width: 75%;
+}
+
+
+
+/*================ News Grid ===============*/
+
+.news_grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.news_grid article{
+    width: 48%;
+    margin-left: 2%;
+
+}
+
+.news_grid figure{
+    width: 100%;
+}
+
+.news_grid article a figure {
+    display: block;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.news_grid article a figure img {
+    width: 100%;
+    
+}
+.news_grid h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
