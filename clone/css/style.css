@@ -8,12 +8,42 @@
 }
 
 
+@keyrframes spinner {
+    from {
+        transform: rotate(-7deg)
+    }
+    to {
+        transform: rotate(352deg)
+    }
+}
+
 *, *:before, *:after{
  box-sizing: border-box;
 
 }
 
+hr {
+    height: 2px;
+background: #000000;
+border: none;
+margin-top: 5px;
+margin-bottom: 5px;
+width: 100vw;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
 
+.thick_hr {
+    height: 3px;
+    width: 90vw;
+}
 
 body {
     font-size: 14px;
@@ -36,9 +66,9 @@ button {
     text-transform: Uppercase;
 }
 
-button:after {
+/* button:after {
     content: "\f054";
-}
+} */
 
 
 header {
@@ -112,9 +142,9 @@ header a:visited {
     }
 
 /* Main Navigation */
-.hdr_row_two {
+/* .hdr_row_two {
 
-}
+} */
 .main_nav ul {
     list-style-type: none;
     display: flex;
@@ -132,13 +162,13 @@ header a:visited {
 
 
 
-/* --- Hero --  */
+/* ======== Hero ======= */
 section.hero_cta {
     width: 100%;
 }
 .hero_cta {
     background-color: #2a2a2a;
-    
+    border: 1px solid gray;
 }
 
 
@@ -170,6 +200,11 @@ section.hero_cta {
 
 }
 
+.centre_cta {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
 .hero_cta ul li a:hover {
     color: rgb(255, 255, 255);
     transition: all ease-in 200ms 20ms;
@@ -183,7 +218,7 @@ section.hero_cta {
     height: 2.3rem;
 }
 
-.cta_icon img {}
+/* .cta_icon img {} */
 
 .hero_cta a {
     color: white;
@@ -253,6 +288,14 @@ section.hero_cta {
     color: white;
 }
 
+.hero_btn_red:hover,
+.hero_btn_black:hover {
+ opacity: 0.6;
+ transition: ease 700ms 30ms;
+}
+
+
+
 
 /* Start main */
 
@@ -264,34 +307,88 @@ main {
 
 
 
-/* --------  ------- */
-/* .featured_motos {
-  width: 98vw;
-  display: flex;
-  justify-content: center;
-  
-} */
+/* -------- Featured Motorcycles  ------- */
+.featured_motos {
+  width: 90vw;
+  margin: 4rem auto;
+}
 
 .featured_motos h3 {
     text-transform: uppercase; 
     font-size: 1.2rem;
-   
+    margin: 4rem;
+    font-weight: bolder;
+    text-align: center;
+
 }
 
+
+/*--- Featured Motorcycles - Owl Carousel ---*/
+
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 85% !important;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    background-color: #cd192d;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.owl-next{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #cd192d;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-dot {
+    cursor: grab;
+}
+
+
+.fa-arrow-right {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+
+
+.fa-arrow-left {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
 
 /*========= Featured News =======*/
 .featured_news {
-    width: 98vw;
+    width: 94vw;
     margin: 0 auto;
 }
-.feature_news_text_wrap {
+.feature_news_wrap {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 94vw;
+    margin: 0 auto;
 }
 
 .featured_news_text {
-    width: 32%;
+    width: 34%;
     padding: 4rem;
 }
 
@@ -316,8 +413,16 @@ main {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
+    animation: spinner 2s;
 }
 
+
+.featured_button {
+    font-size: 1.2em;
+    padding: 1.6rem;
+    border-radius: 1px
+;
+}
 
 
 
@@ -327,53 +432,147 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 98vw;
-    margin: 2rem auto;
+    width: 94vw;
+    margin: 2rem 2rem;
+    /* border: 2px solid black; */
 } 
 
 
 .news_grid article {
   width: 46%;
+  margin-bottom: 5rem;
 }
 
 
 .news_grid article a figure {
-        width: 100%;
-        min-height: 380px;
-        overflow: hidden;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
 }
  
 .news_img {
     width: 100%;
-    max-height: 380px;
+    height: auto;
     display: block;
 } 
 
 
 .news_grid h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin: 1.3rem 0;
 } 
 
+.news_grid p {
+    margin-bottom: 1rem;
+}
 
+.news_grid button {
+    padding: 1.3rem;
+    font-size: 1.1em;
+}
 
+.news_grid_row2 {
+    margin-bottom: 1rem;
+}
 
+/* ======= Footer ===========*/
 
-  .accordian_links nav ul {
+/* Accordian Links */
+.accordian_wrap {
+    width: 58vw;
+
+}
+  .accordian_links  {
     display: flex;
-     justify-content: space-between;
-     width: 100%;
+    justify-content: space-between;
+    font-size: 1.3em;
+   
+  }
+  .accordian_col {
+    text-align: right;
+  }
+
+  .adjust {
+      margin-left: 1rem;
   }
 
 
+  /*----- Footer Links Row 2 to 4 --- */
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.footer_col {
+    width: 24%;
+    font-weight: 400;
+    color: #63656A;
+    letter-spacing: .03125rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+}
 
 
-  /* #owl-demo .item{
-    margin: 3px;
-  }
-  #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-  } */
+/*====== Social Links ========= */
+
+footer {
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+.footer_row3_social {
+    margin: 2rem 0 1rem;
+}
+.social_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 17%;
+    font-size: 1.2rem;
+}
+
+/* Social Colours */
+
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-instagram {
+ color: #c32aa3;
+}
+
+.fa-facebook-square{
+    color: #1877f2;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+
+
+/*=== Corporate Links ===*/
+
+.footer_corp_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.corp_links_wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 70%;
+    
+}
+
+.corp_link {
+     margin-right: 2rem;
+    
+    
+}
+ 
