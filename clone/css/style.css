@@ -1,3 +1,5 @@
+/* Clone Style */
+
 @font-face {
     font-family: 'DIN Demi Lookalike', sans-serif;
     src: url('fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('tff'),
@@ -309,7 +311,7 @@ main {
 
 /* -------- Featured Motorcycles  ------- */
 .featured_motos {
-  width: 90vw;
+  width: 93vw;
   margin: 4rem auto;
 }
 
@@ -325,10 +327,23 @@ main {
 
 /*--- Featured Motorcycles - Owl Carousel ---*/
 
+.item h3 {
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.item p {
+    font-weight: lighter;
+    font-size: 0.65rem;
+    text-align: center;
+}
 
 .owl-carousel .owl-item img {
     display: block;
-    width: 85% !important;
+    width: 83% !important;
+    margin: 0 auto;
 }
 
 .owl-prev {
@@ -339,6 +354,7 @@ main {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+   
 }
 
 .owl-next{
@@ -349,6 +365,7 @@ main {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+ 
 }
 
 .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-dot {
@@ -374,6 +391,9 @@ main {
     top: 30%;
     left: 30%;
 }
+
+
+
 
 /*========= Featured News =======*/
 .featured_news {
