@@ -60,6 +60,8 @@ button {
     text-transform: Uppercase;
 }
 
+
+
 /* button:after {
     content: "\f054";
 } */
@@ -161,7 +163,9 @@ header a:visited {
 
 
 
-/* ======== Hero ======= */
+/* ========================================================== */ 
+                        /*Hero*/
+/* ========================================================== */
 
 
 section.hero_cta {
@@ -306,8 +310,6 @@ main {
 }
 
 
-
-
 /* -------- Featured Motorcycles  ------- */
 .featured_motos {
   width: 93vw;
@@ -392,8 +394,6 @@ main {
 }
 
 
-
-
 /*========= Featured News =======*/
 .featured_news {
     width: 94vw;
@@ -439,9 +439,12 @@ main {
 .featured_button {
     font-size: 1.2em;
     padding: 1.6rem;
-    border-radius: 1px
-;
-}
+    background-color:#000;
+    color: white;
+    padding: 0.75rem;
+    border: 1px solid #000;
+    border-radius: 1px;
+    text-transform: Uppercase;}
 
 
 
@@ -642,19 +645,27 @@ footer {
 
 .slide .info h1 {
     /* margin: 10px 0; */
-    font-size: 2.5rem;
+    font-size: 4.3rem;
     color: white;
-    line-height: 2rem;
+    line-height: 1.2;
     /* width: 70%; */
     text-align: start;
+    text-transform: uppercase;
 }
 
 .slide .info p {
     letter-spacing: 1px;
     width: 60%;
     font-size: 1.1rem;
-    margin-top: .5em;
-    margin-right: 3em;
+    margin: 2rem 0;
+}
+
+.slide .info a {
+    margin-top: 1rem;
+}
+
+.btn_txt {
+    text-transform: uppercase;
 }
 
 .eraser {
@@ -680,16 +691,18 @@ footer {
 }
 
 .buttons-container button {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     background-color: transparent;
     color: #fff;
     cursor: pointer;
     padding: 8px 20px;
+    border: 0;
 }
 
 .buttons-container button:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #333;
+    cursor: pointer;
 }
 
 
